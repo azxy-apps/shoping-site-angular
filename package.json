@@ -1,6 +1,11 @@
 {
   "name": "shoping-site-angular",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "desciption": "A shopping site UI using angular.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azxy-apps/shoping-site-angular.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
