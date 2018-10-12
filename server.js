@@ -7,7 +7,7 @@ const port = process.env.PORT || 5000;
 /*
 *   PROD related
 */
-if (true) {
+if (process.env.NODE_ENV === 'production') {
     // Serve any static files
     app.use(express.static(path.join(__dirname, '/dist')));
     // Handle React routing, return all requests to React app
