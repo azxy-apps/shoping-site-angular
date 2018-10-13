@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from '@app/app.component';
 import { Routes, RouterModule } from '@angular/router';
+
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 import { CoreModule } from '../core/core.module';
 
 @NgModule({
@@ -12,6 +15,7 @@ import { CoreModule } from '../core/core.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AngularFontAwesomeModule,
     CoreModule
   ],
   providers: [],
