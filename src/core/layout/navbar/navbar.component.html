@@ -1,0 +1,42 @@
+<!--<div class="navigationBar">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3 col-sm-3 col-lg-3 app-title">
+        The Bros Inc
+      </div>
+   
+      <button *ngIf="menuSidebarDisplay" (click)="menuSidebarDisplay = !menuSidebarDisplay" > <span class="fa fa-facebook-square"></span></button>
+      <div *ngIf="!menuSidebarDisplay" class="col-6 col-sm-6 col-lg-6">
+        <ul class="menu">
+          <li *ngFor="let menu of menuItems">
+            <div class="menuItems">{{menu.title}}</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>-->
+<div class="navigationBar">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-md-4 col-lg-3 app-title">
+        The Bros Inc
+      </div>
+      <div class="col-6 col-md-8">
+        <nav class="navbar navbar-expand-lg navbar-light pull-right">
+          <button class="navbar-toggler" type="button" (click)="menuSidebarDisplay = !menuSidebarDisplay" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="menu navbar-nav" *ngIf="!menuSidebarDisplay">
+              <li class="nav-item" *ngFor="let menu of menuItems">
+                <a class="nav-link  pl-0 text-center">{{menu.title}}</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

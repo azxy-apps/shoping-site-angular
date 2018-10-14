@@ -1,0 +1,41 @@
+@import "_colors.scss";
+@import "_font.scss";
+.headerClass {
+    background-color: $app-bgcolor-header;
+    border: $app-border-header;
+    color: $app-color-header;
+    padding: 0.25em 0;
+    font-family:$font-family-header;
+}
+
+.social-links {
+    padding-left: 0px;
+}
+
+.social-links li {
+    padding-left: 0.5em;
+    display: inline-block;
+    margin: 0 2px 2px 0;
+    font-size: 1.3em;
+}
+
+.header-top .social-links {
+    margin: 0;
+    display: inline-block;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.siteInfo {
+    display: inline;
+    font-size: 0.9em;
+}
+
+.btn-dark {
+    background-color: $app-bgcolor-header-btn;
+    border: $app-bgcolor-headerbtn-border;
+}
+
+button {
+    margin-top: 0.25em;
+}

@@ -1,0 +1,27 @@
+@import "_colors.scss";
+@import "_font.scss";
+.navigationBar {
+    height: 82.2px; //background-color: $app-bgcolor-navbar;
+    background-color: grey;
+}
+
+.app-title {
+    font-size: $font-size-app-title
+}
+
+.menu {
+    margin-top: 1.5em;
+}
+
+ul.menu {
+    list-style: none;
+}
+
+.menu li {
+    display: inline-flex;
+    padding: 0 2em;
+}
+
+.menuItems {
+    cursor: pointer;
+}
