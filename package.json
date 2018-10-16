@@ -1,15 +1,17 @@
 {
   "name": "shoping-site-angular",
   "version": "1.0.0",
-  "desciption": "A shopping site UI using angular.",
+  "desciption": "UI for shopping site using angular.",
   "repository": {
     "type": "git",
     "url": "https://github.com/azxy-apps/shoping-site-angular.git"
   },
+  "cacheDirectories": [
+    "node_modules"
+  ],
   "scripts": {
     "start": "node server.js",
     "heroku-postbuild": "npm run build",
-    "ng": "ng",
     "dev": "ng serve",
     "build": "ng build",
     "test": "ng test",
