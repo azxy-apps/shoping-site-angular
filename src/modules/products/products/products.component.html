@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8">
+      <ul class="nav nav-pills" role="tablist">
+        <li class="nav-item" *ngFor="let item of topFilterItems">
+          <a class="nav-link" href="#pill-1" role="tab" data-toggle="tab" title="{{item.feature}}" aria-selected="false">
+            <i class={{item.icon}}></i> {{item.feature}}</a>
+        </li>
+      </ul>
+      <div *ngFor="let product of products">
+        <app-product [productImage]="product.img"></app-product>
+      </div>
+    </div>
+  </div>
+</div>

@@ -7,6 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { CoreModule } from '../core/core.module';
+import { ModulesModule } from '../modules/modules.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CoreModule } from '../core/core.module';
     BrowserModule,
     AppRoutingModule,
     AngularFontAwesomeModule,
-    CoreModule
+    CoreModule,
+    ModulesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
