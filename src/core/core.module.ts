@@ -7,7 +7,7 @@ import {CommonModule} from '@angular/common';
 
 @NgModule({
     declarations: [HeaderComponent, FooterComponent, NavbarComponent],
-    imports: [CommonModule],
+    imports: [CommonModule, RouterModule],
     exports: [HeaderComponent, FooterComponent, NavbarComponent]
 })
 export class CoreModule {

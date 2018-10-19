@@ -11,7 +11,7 @@ export class NavbarComponent implements OnInit {
   menuSidebarDisplay: boolean;
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
-    if (event.target.window.innerWidth > 1187  && this.menuSidebarDisplay === true ) {
+    if (event.target.window.innerWidth > 1187 && this.menuSidebarDisplay === true) {
       this.menuSidebarDisplay = false;
     }
   }
@@ -22,8 +22,9 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
     this.menuItems = [{ 'id': 1, title: 'Men' },
     { 'id': 1, title: 'Women' },
-    { 'id': 1, title: 'Kids' },
-    { 'id': 1, title: 'Home & Living' }];
+    { 'id': 1, title: 'Home', link: '/home' },
+    { 'id': 1, title: 'Admin', link: '/admin' },
+    { 'id': 1, title: 'Admin Settings', link: 'admin/settings' }];
   }
 
 }

@@ -7,18 +7,22 @@ import { Routes, RouterModule } from '@angular/router';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { CoreModule } from '../core/core.module';
-import { ModulesModule } from '../modules/modules.module';
+import { CommonModule } from '@angular/common';
+import { PageNotFoundComponent } from '@app/page-not-found.component';
+import { HomeModule } from 'src/modules/home/home.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    CommonModule,
     AngularFontAwesomeModule,
     CoreModule,
-    ModulesModule
+    HomeModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

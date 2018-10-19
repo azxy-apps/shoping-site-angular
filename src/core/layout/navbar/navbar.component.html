@@ -20,7 +20,7 @@
   <div class="container">
     <div class="row">
       <div class="col-6 col-md-4 col-lg-3 app-title">
-       Bros Inc
+        Bros Inc
       </div>
       <div class="col-6 col-md-8">
         <nav class="navbar navbar-expand-lg navbar-light pull-right">
@@ -31,7 +31,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="menu navbar-nav" *ngIf="!menuSidebarDisplay">
               <li class="nav-item" *ngFor="let menu of menuItems">
-                <a class="nav-link pl-0 pointer">{{menu.title}}</a>
+                <a class="nav-link pl-0 pointer" routerLink="{{menu.link}}">{{menu.title}}</a>
               </li>
             </ul>
           </div>
