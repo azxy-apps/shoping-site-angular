@@ -1,0 +1,18 @@
+.nav-pills{
+    margin-bottom: 15px;
+}
+.nav-pills>li .nav-link.active {
+    color: #777777;
+    background-color: transparent;
+    border-bottom: 1px solid #777777;
+}
+
+.nav-pills>li .nav-link {
+    border-radius: 0;
+    padding: 7px 10px;
+    border: 1px solid transparent;
+    color: #999999;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
+}

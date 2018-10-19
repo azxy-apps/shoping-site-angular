@@ -1,0 +1,39 @@
+img {
+    width: 100%;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.productImage::after {
+    transition: opacity 1s ease;
+}
+
+.productImage:hover {
+    background: black;
+    opacity: 0.5;
+}
+
+.text-default {
+    color: #09afdf
+}
+
+.prodFavDetail {
+    font-size: 1em;
+    a {
+        padding: 5px 15px;
+        font-size: 12px;
+        line-height: 1.4666666667;
+        border-radius: 0px;
+        margin: 5px 0;
+        color: #09afdf;
+        cursor: pointer;
+    }
+}
+
+.productDetails .productTitle {
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 100;
+}
